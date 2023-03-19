@@ -1,0 +1,143 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  /* padding: 0; */
+  /* margin: 0; */
+}
+body {
+  background-color: #3d9578;
+  font-family: "Courier New", Courier, monospace;
+}
+p {
+  overflow-wrap: break-word;
+}
+
+.Kanban {
+  margin: 30px auto;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.column {
+  flex: 1;
+}
+
+.column__not-started .task {
+  border: 2px solid #ef4444;
+}
+
+.column__in-progress .task {
+  border: 2px solid #f97316;
+}
+
+.column__completed .task {
+  border: 2px solid #a3e635;
+}
+.column-title {
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.tasks-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  background-color: #fff;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  height: 56px;
+}
+.task-description {
+  padding: 2px 10px;
+  width: 100%;
+  margin: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.icon-container {
+  display: flex;
+  gap: 10px;
+}
+
+.drop-zone {
+  box-shadow: 1px 7px 20px rgba(0, 0, 0, 0.7);
+  transform: scale(1);
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.delete-icon {
+  color: #f43f53;
+}
+.edit-icon {
+  color: #7c3aed;
+}
+.icon:hover {
+  margin-top: -10px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #36866d;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #10b981;
+}
+
+.drag-over {
+  background-color: #064e3b;
+  /* background-color: #fff; */
+  opacity: 0.5;
+  border-radius: 7px;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.footer-text a {
+  text-decoration: none;
+}
+
+.footer-text a:active,
+.footer-text a:visited,
+.footer-text a:link,
+.footer-text a:checked {
+  color: #fff;
+}
+
+.footer-text a:hover {
+  color: #a3e635;
+}

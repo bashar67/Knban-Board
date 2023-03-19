@@ -1,0 +1,16 @@
+@media (max-width: 868px) {
+  .Kanban {
+    gap: 5px;
+  }
+
+  .column-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .Kanban {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

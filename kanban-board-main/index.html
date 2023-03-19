@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="js/main.js"></script>
+
+    <title>Kanban Board</title>
+  </head>
+  <body>
+    <div class="Kanban">
+      <section class="column column__not-started">
+        <h2 class="column-title">Not Started</h2>
+        <ul class="tasks-list" id="list-1"></ul>
+        <button class="btn btn-add-task">+ Add</button>
+      </section>
+      <section class="column column__in-progress">
+        <h2 class="column-title">In Progress</h2>
+        <ul class="tasks-list" id="list-2"></ul>
+        <button class="btn btn-add-task">+ Add</button>
+      </section>
+      <section class="column column__completed">
+        <h2 class="column-title">Completed</h2>
+        <ul class="tasks-list" id="list-3"></ul>
+        <button class="btn btn-add-task">+ Add</button>
+      </section>
+    </div>
+
+    <footer>
+      <div class="footer-text">
+        <p>
+          Created by
+          <a
+            rel="noopener"
+            href="https://www.linkedin.com/in/bashar-yousri-330882234"
+            target="_blank"
+            >bashar yousri</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
