@@ -1,6 +1,7 @@
 @media (max-width: 868px) {
   .Kanban {
     gap: 5px;
+    width:80%;
   }
 
   .column-title {
@@ -12,5 +13,6 @@
   .Kanban {
     flex-direction: column;
     gap: 10px;
+     width:70%;
   }
 }
